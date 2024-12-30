@@ -36,7 +36,7 @@ A Spring Boot middleware application that facilitates communication between mult
 }
 Response:
 json
-Copy code
+ 
 {
   "username": "admin",
   "token": "mock-token-12345"
@@ -49,11 +49,11 @@ Endpoint: GET /api/emailservice
 
 Headers:
 plaintext
-Copy code
+ 
 Authorization: mock-token-12345
 Response:
 json
-Copy code
+ 
 {
   "userEmail": "user@example.com",
   "accessToken": "mock-token-12345",
@@ -70,18 +70,18 @@ Steps to Run
 Clone the Repository:
 
 bash
-Copy code
+ 
 git clone <repository-url>
 cd <repository-folder>
 Build the Project:
 
 bash
-Copy code
+ 
 mvn clean install
 Run the Application:
 
 bash
-Copy code
+ 
 mvn spring-boot:run
 Access the APIs:
 
@@ -93,14 +93,14 @@ POST http://localhost:8081/api/login
 
 Request Body:
 json
-Copy code
+ 
 {
   "username": "admin",
   "password": "password"
 }
 Response:
 json
-Copy code
+ 
 {
   "username": "admin",
   "token": "mock-token-12345"
@@ -110,11 +110,11 @@ GET http://localhost:8081/api/emailservice
 
 Request Header:
 plaintext
-Copy code
+ 
 Authorization: mock-token-12345
 Response:
 json
-Copy code
+ 
 {
   "userEmail": "user@example.com",
   "accessToken": "mock-token-12345",
@@ -125,5 +125,5 @@ Port Configuration
 To change the default port, update the application.properties file:
 
 properties
-Copy code
+ 
 server.port=8081
