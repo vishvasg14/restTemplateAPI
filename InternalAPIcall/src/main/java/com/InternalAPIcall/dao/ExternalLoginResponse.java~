@@ -1,0 +1,9 @@
+package com.InternalAPIcall.dao;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class ExternalLoginResponse {
+    private String username;
+    private String token;
+}

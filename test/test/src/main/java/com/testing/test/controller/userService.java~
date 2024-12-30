@@ -1,0 +1,5 @@
+package com.testing.test.controller;
+
+@service
+public class userService {
+}
